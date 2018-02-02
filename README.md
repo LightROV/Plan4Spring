@@ -20,7 +20,7 @@ The plan for spring festival term.
 
 ## 一些基本约定与 Code Style
 1.约定
-* 网络框架统一使用 <b>Asio.Boost 1.66.0</b> (Docs: http://www.boost.org/doc/libs/1_66_0/doc/html/boost_asio.html Tutorial: http://www.boost.org/doc/libs/1_66_0/doc/html/boost_asio/tutorial.html)
+* 网络框架统一使用 <b>Asio.Boost 1.58.0</b> (Docs: http://www.boost.org/doc/libs/1_66_0/doc/html/boost_asio.html Tutorial: http://www.boost.org/doc/libs/1_66_0/doc/html/boost_asio/tutorial.html)
 * 图像处理也依方便起见直接上 OpenCV 2.*
 * Python 使用 Python 3.6.* 版本
 * 为了模块的可拓展性和编写简便起见，本项目不使用 C 代码，全部使用 C++ 实现。务必将 classes 设计合理。
