@@ -4,19 +4,20 @@ The plan for spring festival term.
 针对 LightROV ，至少有以下几个模块需要实现：
 
 1.协议层
-* UDP/TCP 异步通信及必要的传输认证
-* 视频/音频流的转码、传输、解码
-* 控制指令的确定（包括但不限于：转向、推进、升降）
+- [x] ~~UDP/TCP 异步通信及必要的传输认证~~(不重要，略去)
+- [x] 视频~~音频流~~的转码、传输、解码(没有拾音器，音频暂不考虑)
+- [ ] 控制指令的确定（包括但不限于：转向、推进、升降）
+- [ ] 回传指令的确定
 
 2.嵌入式端
-* 基础控制实现方案的确立
-* 传感器的调试与数据滤波及目标数据的解算
+* [ ] 基础控制实现方案的确立
+* [ ] 传感器的调试与数据滤波及目标数据的解算
 
 3.客户端
 > 从上到下优先，能实现到哪就到哪：
-* Linux ( gtk+3.* )
-* Android
-* Windows ( gtk+3.* )
+* [ ] Linux ( gtk+3.* )
+* [ ] Android
+* [ ] Windows ( gtk+3.* )
 
 ## 一些基本约定与 Code Style
 1.约定
@@ -32,8 +33,8 @@ The plan for spring festival term.
 | :------------   | :----- |
 | ltrov           | 根命名空间 |
 | ltrov::control  | 电机的控制 |
-| ltrow::network  | 潜水器的通信 |
-| ltrow::sensor   | 传感器的数据获取及其数据解算 |
+| ltrov::network  | 潜水器的通信 |
+| ltrov::sensor   | 传感器的数据获取及其数据解算 |
 > 三级及更深层次命名空间的确定可根据情况自行命名，但为了本项目尽量简单，尽量不要定义四级或以上层次的命名空间。namespace 命名规则参照: 
 http://google.github.io/styleguide/cppguide.html#Namespace_Names
 
