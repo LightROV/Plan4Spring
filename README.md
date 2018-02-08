@@ -19,6 +19,9 @@ The plan for spring festival term.
 * [ ] Android
 * [ ] Windows ( gtk+3.* )
 
+## 瞎整的架构图
+![瞎整的架构图](./src/架构图.png)
+
 ## 一些基本约定与 Code Style
 1.约定
 * 网络框架统一使用 <b>Asio.Boost 1.58.0</b> (Docs: http://www.boost.org/doc/libs/1_58_0/doc/html/boost_asio.html Tutorial: http://www.boost.org/doc/libs/1_58_0/doc/html/boost_asio/tutorial.html)
