@@ -16,7 +16,7 @@
 /* example */
 
 // 请求获取视频数据
-#define REQUEST_VIDEO_GET   0x00000110000001100000011000000110
+#define REQUEST_VIDEO_GET   0x6666
 
 /* example end */
 

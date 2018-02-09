@@ -3,7 +3,7 @@ project(AsioTest)
 
 set(CMAKE_CXX_STANDARD 11)
 
-FIND_PACKAGE(Boost 1.58.0 REQUIRED COMPONENTS system thread regex)
+find_package(Boost 1.58.0 REQUIRED COMPONENTS system thread regex)
 find_package( OpenCV REQUIRED )
 
 include_directories(${Boost_INCLUDE_DIR})
