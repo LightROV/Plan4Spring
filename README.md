@@ -15,7 +15,7 @@ The plan for spring festival term.
 
 3.客户端
 > 从上到下优先，能实现到哪就到哪：
-* [ ] Linux ( gtk+3.* )
+* [ ] Linux ( ~~gtk+3.*~~ gtkmm )
 * [ ] Android
 * [ ] Windows ( gtk+3.* )
 
@@ -35,9 +35,10 @@ The plan for spring festival term.
 | namespace       | 用途 |
 | :------------   | :----- |
 | ltrov           | 根命名空间 |
-| ltrov::control  | 电机的控制 |
+| ltrov::controller| 控制器 |
 | ltrov::network  | 潜水器的通信 |
 | ltrov::sensor   | 传感器的数据获取及其数据解算 |
+| ltrov::driver   | 外设的驱动程序,如电机 |
 > 三级及更深层次命名空间的确定可根据情况自行命名，但为了本项目尽量简单，尽量不要定义四级或以上层次的命名空间。namespace 命名规则参照: 
 http://google.github.io/styleguide/cppguide.html#Namespace_Names
 
