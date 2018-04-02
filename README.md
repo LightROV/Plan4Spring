@@ -15,12 +15,16 @@ The plan for spring festival term.
 
 3.客户端
 > 从上到下优先，能实现到哪就到哪：
-* [ ] Linux ( ~~gtk+3.*~~ gtkmm )
+* [ ] Linux ( ~~gtk+3.*~~ gtkmm3.18.0 )
 * [ ] Android
-* [ ] Windows ( gtk+3.* )
+* [ ] Windows ( ~~gtk+3.*~~ gtkmm3.18.0 )
 
 ## 瞎整的架构图
 ![瞎整的架构图](./src/架构图.png)
+### 关于架构的一些说明
+1. Scheduler 为一个单例，负责整个系统的调度
+2. Controller-Adapter 也是一个单例，负责管理各个 controller ，并分配给 controller 对应的任务
+3. 每一个 Controller 需要注册对应的事件，配置文件中需要事先声明恰当的事件代码和事件名称。另外，需要注意的时，每一个 Controller 类只能注册一遍，即只实例化一个对象
 
 ## 一些基本约定与 Code Style
 1.约定

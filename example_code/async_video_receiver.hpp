@@ -23,7 +23,7 @@
 /* 
  * 一些配置
  */
-#define SENDER_HOST         "192.168.1.107"
+#define SENDER_HOST         "127.0.0.1"
 #define SENDER_PORT         7201
 #define SERVER_PORT         7200
 #define COMPRESS_QUALITY    60
